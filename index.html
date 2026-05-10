@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huertas Artemisa y Muyquyta</title>
+
+  <style>
+
+    :root{
+      --verde:#2e7d32;
+      --verde-claro:#66bb6a;
+      --fondo:#f4f8f4;
+      --texto:#2e4d2e;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    body{
+      margin:0;
+      font-family:'Segoe UI', sans-serif;
+      background:var(--fondo);
+      color:var(--texto);
+      scroll-behavior:smooth;
+    }
+
+    nav{
+      position:sticky;
+      top:0;
+      background:rgba(46,125,50,0.95);
+      padding:15px;
+      display:flex;
+      justify-content:center;
+      gap:25px;
+      z-index:1000;
+      flex-wrap:wrap;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#c8e6c9;
+    }
+
+    header{
+      height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    header h1{
+      font-size:3.5em;
+      margin:0;
+    }
+
+    header p{
+      font-size:1.3em;
+      margin:20px 0;
+    }
+
+    .btn{
+      background:var(--verde-claro);
+      color:white;
+      padding:12px 25px;
+      border-radius:30px;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#4caf50;
+    }
+
+    section{
+      padding:80px 20px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:40px;
+      color:var(--verde);
+      font-size:2.2em;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      border-radius:15px;
+      box-shadow:0 6px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .galeria{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+      gap:15px;
+    }
+
+    .galeria img{
+      width:100%;
+      border-radius:10px;
+      height:220px;
+      object-fit:cover;
+    }
+
+    iframe{
+      border:none;
+      border-radius:10px;
+    }
+
+    footer{
+      background:var(--verde);
+      color:white;
+      text-align:center;
+      padding:40px 20px;
+      margin-top:50px;
+    }
+
+    .modal{
+      display:none;
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.6);
+      justify-content:center;
+      align-items:center;
+      z-index:2000;
+    }
+
+    .modal-content{
+      background:white;
+      padding:30px;
+      border-radius:15px;
+      max-width:450px;
+      text-align:center;
+      position:relative;
+    }
+
+    .close{
+      position:absolute;
+      top:10px;
+      right:15px;
+      cursor:pointer;
+      font-weight:bold;
+      font-size:20px;
+    }
+
+    .card-click{
+      cursor:pointer;
+      text-align:center;
+      font-weight:bold;
+    }
+
+    @media(max-width:768px){
+
+      header h1{
+        font-size:2.5em;
+      }
+
+      nav{
+        gap:15px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- MENU -->
+
+<nav>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#proyectos">Proyecto</a>
+  <a href="#galeria">Galería</a>
+  <a href="#cuidado">Cuidado</a>
+  <a href="#compostaje">Compostaje</a>
+  <a href="#videos">Videos</a>
+  <a href="#ubicacion">Ubicación</a>
+</nav>
+
+<!-- HEADER -->
+
+<header>
+
+  <h1>Huertas Artemisa y Muyquyta</h1>
+
+  <p>
+    Un espacio comunitario donde cultivamos vida,
+    sostenibilidad y conciencia ambiental
+  </p>
+
+  <a href="#nosotros" class="btn">
+    Conócenos
+  </a>
+
+</header>
+
+<!-- NOSOTROS -->
+
+<section id="nosotros">
+
+  <h2>Sobre Nosotros</h2>
+
+  <div class="card">
+
+    <p>
+      Las huertas Artemisa y Muyquyta están ubicadas en Bosa Piamonte,
+      Bogotá. Son espacios comunitarios enfocados en la agricultura urbana,
+      el trabajo colaborativo y el cuidado del medio ambiente.
+    </p>
+
+    <p>
+      En estas huertas se desarrollan proyectos ecológicos,
+      procesos de compostaje y actividades educativas que fortalecen
+      la conciencia ambiental dentro de la comunidad.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- PROYECTO -->
+
+<!-- PROYECTO -->
+
+<section id="proyectos">
+
+  <h2>Proyecto Principal</h2>
+
+  <div class="card">
+
+    <h3>Paca-Caca</h3>
+
+    <p>
+      El proyecto Paca-Caca es una técnica ecológica utilizada
+      para transformar residuos orgánicos y estiércol animal
+      en compost natural rico en nutrientes.
+    </p>
+
+    <p><strong>¿Cómo funciona?</strong></p>
+
+    <ul>
+      <li>Se recolectan residuos orgánicos.</li>
+      <li>Se organizan en capas.</li>
+      <li>Los microorganismos descomponen el material.</li>
+      <li>Se genera compost natural para la huerta.</li>
+    </ul>
+
+    <p><strong>Beneficios:</strong></p>
+
+    <ul>
+      <li>Reduce residuos contaminantes.</li>
+      <li>Mejora la fertilidad del suelo.</li>
+      <li>Disminuye malos olores.</li>
+      <li>Promueve prácticas sostenibles.</li>
+    </ul>
+
+    <!-- GALERIA PACA CACA -->
+
+    <h3 style="margin-top:40px; text-align:center; color:#2e7d32;">
+      Fotografías del proceso Paca-Caca
+    </h3>
+
+    <div class="galeria">
+    <img src="1.jpeg">
+
+    <img src="2.jpeg">
+
+    <img src="3.jpeg">
+
+    <img src="4.jpeg">
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- CUIDADO -->
+
+<section id="cuidado">
+
+  <h2>Cuidado de la Huerta</h2>
+
+  <div class="grid">
+
+    <div class="card card-click" onclick="abrirModal('riego')">
+      💧 Riego adecuado
+    </div>
+
+    <div class="card card-click" onclick="abrirModal('compost')">
+      🌱 Uso de compost
+    </div>
+
+    <div class="card card-click" onclick="abrirModal('plagas')">
+      🐞 Control ecológico de plagas
+    </div>
+
+    <div class="card card-click" onclick="abrirModal('rotacion')">
+      🔄 Rotación de cultivos
+    </div>
+
+    <div class="card card-click" onclick="abrirModal('aire')">
+      🌿 Airear la tierra
+    </div>
+
+    <div class="card card-click" onclick="abrirModal('pisoteo')">
+      🚫 Evitar pisoteo
+    </div>
+
+    <div class="card card-click" onclick="abrirModal('agua')">
+      💦 Uso responsable del agua
+    </div>
+
+    <div class="card card-click" onclick="abrirModal('comunidad')">
+      🤝 Trabajo comunitario
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GALERIA -->
+
+<section id="galeria">
+
+  <h2>Galería</h2>
+
+  <div class="galeria">
+
+    <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399">
+
+    <img src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf">
+
+    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+
+    <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735">
+
+  </div>
+
+</section>
+
+<!-- MODAL -->
+
+<div id="modal" class="modal">
+
+  <div class="modal-content">
+
+    <span class="close" onclick="cerrarModal()">
+      X
+    </span>
+
+    <p id="textoModal"></p>
+
+  </div>
+
+</div>
+
+<!-- COMPOSTAJE -->
+
+<section id="compostaje">
+
+  <h2>Proceso de Compostaje</h2>
+
+  <div class="card">
+
+    <p>
+      El compostaje es un proceso natural mediante el cual
+      los residuos orgánicos se transforman en abono natural.
+    </p>
+
+    <ul>
+      <li>Se recolectan residuos orgánicos.</li>
+      <li>Se colocan en capas.</li>
+      <li>Se mantiene la humedad adecuada.</li>
+      <li>Los microorganismos realizan la descomposición.</li>
+      <li>Se obtiene compost rico en nutrientes.</li>
+    </ul>
+
+    <p>
+      Este proceso ayuda a reducir residuos y mejorar
+      la calidad del suelo de manera ecológica.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- VIDEOS -->
+
+<section id="videos">
+
+  <h2>Videos Educativos</h2>
+
+  <div class="grid">
+
+    <div class="card">
+
+      <iframe
+      width="100%"
+      height="220"
+      src="https://www.youtube.com/embed/VIDEO_ID"
+      allowfullscreen>
+      </iframe>
+
+      <p>Video sobre uso de la Paca-Caca</p>
+
+    </div>
+
+    <div class="card">
+
+      <iframe
+      width="100%"
+      height="220"
+      src="https://www.youtube.com/embed/VIDEO_ID"
+      allowfullscreen>
+      </iframe>
+
+      <p>Video sobre la transformación de un producto</p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- UBICACIONES -->
+
+<section id="ubicacion">
+
+  <h2>Ubicaciones</h2>
+
+  <div class="grid">
+
+    <!-- ARTEMISA -->
+
+    <div class="card">
+
+      <h3>Huerta Artemisa</h3>
+
+      <p>Bosa Piamonte, Bogotá</p>
+
+      <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.11567644947!2d-74.18812481011844!3d4.606173827779189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9f005c555ee5%3A0x84d2045b08a4eda9!2sHuerta%20Artemisa!5e0!3m2!1ses-419!2sco!4v1778441295798!5m2!1ses-419!2sco"
+      width="100%"
+      height="300"
+      loading="lazy">
+      </iframe>
+
+    </div>
+
+    <!-- MUYQUYTA -->
+
+    <div class="card">
+
+      <h3>Huerta Muyquyta</h3>
+
+      <p>Bosa Piamonte, Bogotá</p>
+
+      <iframe
+      src="https://maps.google.com/maps?q=Bosa%20Piamonte%20Bogota&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      width="100%"
+      height="300"
+      loading="lazy">
+      </iframe>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FUNDACION -->
+
+<section id="fundacion">
+
+  <h2>Organización Ambiental</h2>
+
+  <div class="card">
+
+    <h3 style="color:#2e7d32; text-align:center;">
+      FUNDACIÓN JUVENIL HIKARI YAMI
+    </h3>
+
+    <p>
+      La Fundación Juvenil Hikari Yami es una organización sin ánimo de lucro
+      que trabaja en actividades de educación y sensibilización ambiental y social,
+      utilizando diferentes medios de comunicación para promover el cuidado del
+      medio ambiente y el fortalecimiento de la comunidad.
+    </p>
+
+    <p>
+      Esta organización se encuentra en constante crecimiento y aprendizaje,
+      desarrollando diferentes proyectos enfocados en la sostenibilidad,
+      la conciencia ecológica y el trabajo comunitario.
+    </p>
+
+    <p>
+      Gracias a su apoyo y acompañamiento, las huertas Artemisa y Muyquyta
+      fortalecen sus procesos ambientales y educativos dentro de la comunidad.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <h3>Síguenos en nuestras redes</h3>
+
+  <p>
+    Mantente conectado con nuestras huertas y conoce
+    más sobre nuestras actividades 🌱
+  </p>
+
+  <div style="margin:20px 0;">
+
+    <a href="#" class="btn">
+      Facebook
+    </a>
+
+    <a href="#" class="btn">
+      Instagram
+    </a>
+
+    <a href="#" class="btn">
+      YouTube
+    </a>
+
+  </div>
+
+  <p>
+    © 2026 Huertas Artemisa y Muyquyta
+  </p>
+
+</footer>
+
+<!-- SCRIPT -->
+
+<script>
+
+function abrirModal(tipo){
+
+  const texto = {
+
+    riego:
+    "El riego debe hacerse en horas frescas del día para evitar evaporación y mantener hidratadas las plantas.",
+
+    compost:
+    "El compost aporta nutrientes naturales al suelo y mejora el crecimiento de los cultivos.",
+
+    plagas:
+    "Las plagas pueden controlarse usando métodos ecológicos como ajo, ají o plantas repelentes.",
+
+    rotacion:
+    "La rotación de cultivos evita enfermedades y mejora la calidad del suelo.",
+
+    aire:
+    "Airear la tierra permite que las raíces reciban oxígeno correctamente.",
+
+    pisoteo:
+    "Evitar pisar la huerta protege las raíces y evita compactar el suelo.",
+
+    agua:
+    "El uso responsable del agua ayuda a conservar este recurso vital.",
+
+    comunidad:
+    "El trabajo comunitario fortalece la huerta y fomenta el aprendizaje colectivo."
+
+  };
+
+  document.getElementById("textoModal").innerText = texto[tipo];
+
+  document.getElementById("modal").style.display = "flex";
+
+}
+
+function cerrarModal(){
+
+  document.getElementById("modal").style.display = "none";
+
+}
+
+</script>
+
+</body>
+</html>
