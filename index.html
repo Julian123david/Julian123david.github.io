@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Huertas Artemisa y Muyquyta</title>
+
+  <title>Jardines de Artemisa y Muyquyta</title>
 
   <style>
 
@@ -73,6 +75,7 @@
     header p{
       font-size:1.3em;
       margin:20px 0;
+      max-width:700px;
     }
 
     .btn{
@@ -83,6 +86,8 @@
       text-decoration:none;
       font-weight:bold;
       transition:0.3s;
+      display:inline-block;
+      margin:5px;
     }
 
     .btn:hover{
@@ -91,7 +96,7 @@
 
     section{
       padding:80px 20px;
-      max-width:1100px;
+      max-width:1200px;
       margin:auto;
     }
 
@@ -104,7 +109,7 @@
 
     .grid{
       display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+      grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
       gap:25px;
     }
 
@@ -120,9 +125,17 @@
       transform:translateY(-10px);
     }
 
+    .card img{
+      transition:0.4s;
+    }
+
+    .card img:hover{
+      transform:scale(1.03);
+    }
+
     .galeria{
       display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+      grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
       gap:15px;
     }
 
@@ -196,6 +209,7 @@
     }
 
   </style>
+
 </head>
 
 <body>
@@ -203,24 +217,38 @@
 <!-- MENU -->
 
 <nav>
+
   <a href="#nosotros">Nosotros</a>
+
+  <a href="#historia">Historia</a>
+
   <a href="#proyectos">Proyecto</a>
+
+  <a href="#timeline">Línea del Tiempo</a>
+
   <a href="#galeria">Galería</a>
+
   <a href="#cuidado">Cuidado</a>
+
   <a href="#compostaje">Compostaje</a>
+
   <a href="#videos">Videos</a>
+
+  <a href="#aportar">Aportar</a>
+
   <a href="#ubicacion">Ubicación</a>
+
 </nav>
 
 <!-- HEADER -->
 
 <header>
 
-  <h1>Huertas Artemisa y Muyquyta</h1>
+  <h1>Jardines de Artemisa y Muyquyta</h1>
 
   <p>
     Un espacio comunitario donde cultivamos vida,
-    sostenibilidad y conciencia ambiental
+    sostenibilidad, conciencia ambiental y trabajo colectivo.
   </p>
 
   <a href="#nosotros" class="btn">
@@ -238,9 +266,10 @@
   <div class="card">
 
     <p>
-      Las huertas Artemisa y Muyquyta están ubicadas en Bosa Piamonte,
-      Bogotá. Son espacios comunitarios enfocados en la agricultura urbana,
-      el trabajo colaborativo y el cuidado del medio ambiente.
+      Los Jardines de Artemisa y Muyquyta están ubicados
+      en Bosa Piamonte, Bogotá. Son espacios comunitarios
+      enfocados en la agricultura urbana, el trabajo colaborativo
+      y el cuidado del medio ambiente.
     </p>
 
     <p>
@@ -253,7 +282,73 @@
 
 </section>
 
-<!-- PROYECTO -->
+<!-- HISTORIA -->
+
+<section id="historia">
+
+  <h2>¿Cómo nace la huerta?</h2>
+
+  <div class="grid">
+
+    <div class="card">
+
+      <h3>Origen Comunitario</h3>
+
+      <p>
+        Los Jardines de Artemisa y Muyquyta nacen como una iniciativa
+        comunitaria en Bosa Piamonte, con el propósito de recuperar
+        espacios para el encuentro, la siembra y el cuidado del territorio.
+      </p>
+
+      <p>
+        La huerta surge gracias al trabajo colectivo de vecinos,
+        jóvenes y líderes ambientales comprometidos con la
+        sostenibilidad y la educación ambiental.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>Importancia para el territorio</h3>
+
+      <p>
+        La huerta fortalece la conexión con la naturaleza,
+        promueve la soberanía alimentaria y crea espacios
+        de aprendizaje comunitario.
+      </p>
+
+      <p>
+        Además, permite recuperar saberes ancestrales,
+        fomentar el trabajo colectivo y proteger el medio ambiente.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CARTOGRAFIA -->
+
+<section id="cartografia">
+
+  <h2>Cartografía del Territorio</h2>
+
+  <div class="card">
+
+    <p>
+      La cartografía social permite reconocer el territorio,
+      identificar problemáticas ambientales y fortalecer
+      la relación de la comunidad con los espacios verdes.
+    </p>
+
+    <img src="cartografia.jpg"
+    style="width:100%; border-radius:15px; margin-top:20px;">
+
+  </div>
+
+</section>
 
 <!-- PROYECTO -->
 
@@ -266,43 +361,72 @@
     <h3>Paca-Caca</h3>
 
     <p>
-      El proyecto Paca-Caca es una técnica ecológica utilizada
+      La Paca-Caca es una técnica ecológica de compostaje utilizada
       para transformar residuos orgánicos y estiércol animal
-      en compost natural rico en nutrientes.
+      en abono natural rico en nutrientes para la tierra.
     </p>
 
-    <p><strong>¿Cómo funciona?</strong></p>
+    <p>
+      Este proceso ayuda a reducir residuos, mejorar la fertilidad
+      del suelo y fortalecer las prácticas sostenibles dentro
+      de la huerta comunitaria.
+    </p>
+
+    <p><strong>¿Cómo se realiza?</strong></p>
 
     <ul>
-      <li>Se recolectan residuos orgánicos.</li>
-      <li>Se organizan en capas.</li>
-      <li>Los microorganismos descomponen el material.</li>
-      <li>Se genera compost natural para la huerta.</li>
+
+      <li>Primero se realiza un hueco en la tierra.</li>
+
+      <li>
+        Luego se agregan capas de materiales orgánicos como:
+        tierra, residuos verdes, ramas secas y estiércol animal.
+      </li>
+
+      <li>
+        Las capas se organizan de manera alternada para
+        facilitar la descomposición natural.
+      </li>
+
+      <li>
+        Con el paso del tiempo, los microorganismos transforman
+        estos materiales en compost natural.
+      </li>
+
+      <li>
+        Finalmente se obtiene un abono ecológico que nutre
+        la tierra de la huerta.
+      </li>
+
     </ul>
 
     <p><strong>Beneficios:</strong></p>
 
     <ul>
-      <li>Reduce residuos contaminantes.</li>
-      <li>Mejora la fertilidad del suelo.</li>
-      <li>Disminuye malos olores.</li>
-      <li>Promueve prácticas sostenibles.</li>
-    </ul>
 
-    <!-- GALERIA PACA CACA -->
+      <li>Reduce residuos contaminantes.</li>
+
+      <li>Mejora la fertilidad del suelo.</li>
+
+      <li>Disminuye malos olores.</li>
+
+      <li>Promueve prácticas sostenibles.</li>
+
+    </ul>
 
     <h3 style="margin-top:40px; text-align:center; color:#2e7d32;">
       Fotografías del proceso Paca-Caca
     </h3>
 
     <div class="galeria">
-    <img src="1.jpeg">
 
-    <img src="2.jpeg">
+      <img src="1.jpeg">
 
-    <img src="3.jpeg">
+      <img src="2.jpeg">
 
-    <img src="4.jpeg">
+      <img src="3.jpeg">
+
+      <img src="4.jpeg">
 
     </div>
 
@@ -310,7 +434,56 @@
 
 </section>
 
+<!-- LINEA DEL TIEMPO -->
 
+<section id="timeline">
+
+  <h2>Línea del Tiempo de la Huerta</h2>
+
+  <div class="grid">
+
+    <div class="card">
+
+      <img src="inicio.jpg"
+      style="width:100%; border-radius:10px;">
+
+      <h3>Inicio del espacio</h3>
+
+      <p>
+        Recuperación del terreno y primeras jornadas comunitarias.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <img src="siembra.jpg"
+      style="width:100%; border-radius:10px;">
+
+      <h3>Primeras siembras</h3>
+
+      <p>
+        Se comienzan a sembrar plantas medicinales y alimentos.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <img src="crecimiento.jpg"
+      style="width:100%; border-radius:10px;">
+
+      <h3>Crecimiento de la huerta</h3>
+
+      <p>
+        La comunidad fortalece los procesos ambientales y educativos.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
 
 <!-- CUIDADO -->
 
@@ -406,11 +579,17 @@
     </p>
 
     <ul>
+
       <li>Se recolectan residuos orgánicos.</li>
+
       <li>Se colocan en capas.</li>
+
       <li>Se mantiene la humedad adecuada.</li>
+
       <li>Los microorganismos realizan la descomposición.</li>
+
       <li>Se obtiene compost rico en nutrientes.</li>
+
     </ul>
 
     <p>
@@ -426,33 +605,64 @@
 
 <section id="videos">
 
-  <h2>Videos Educativos</h2>
+  <h2>Video Cronológico de la Huerta</h2>
+
+  <div class="card">
+
+    <iframe
+      width="100%"
+      height="500"
+      src="https://www.youtube.com/embed/TU_VIDEO"
+      allowfullscreen>
+    </iframe>
+
+    <p style="margin-top:20px;">
+      Proceso cronológico del crecimiento y transformación
+      de los Jardines de Artemisa y Muyquyta.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- APORTAR -->
+
+<section id="aportar">
+
+  <h2>¿Cómo aportar a la huerta?</h2>
 
   <div class="grid">
 
     <div class="card">
 
-      <iframe
-      width="100%"
-      height="220"
-      src="https://www.youtube.com/embed/VIDEO_ID"
-      allowfullscreen>
-      </iframe>
+      <h3>🌱 Donación de semillas</h3>
 
-      <p>Video sobre uso de la Paca-Caca</p>
+      <p>
+        Puedes apoyar llevando semillas, plantas
+        medicinales o herramientas de jardinería.
+      </p>
 
     </div>
 
     <div class="card">
 
-      <iframe
-      width="100%"
-      height="220"
-      src="https://www.youtube.com/embed/VIDEO_ID"
-      allowfullscreen>
-      </iframe>
+      <h3>🤝 Trabajo comunitario</h3>
 
-      <p>Video sobre la transformación de un producto</p>
+      <p>
+        Participa en jornadas de limpieza,
+        siembra y mantenimiento de la huerta.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>♻️ Residuos orgánicos</h3>
+
+      <p>
+        Los residuos orgánicos ayudan en los procesos
+        de compostaje y fertilización natural.
+      </p>
 
     </div>
 
@@ -468,11 +678,9 @@
 
   <div class="grid">
 
-    <!-- ARTEMISA -->
-
     <div class="card">
 
-      <h3>Huerta Artemisa</h3>
+      <h3>Jardín Artemisa</h3>
 
       <p>Bosa Piamonte, Bogotá</p>
 
@@ -485,11 +693,9 @@
 
     </div>
 
-    <!-- MUYQUYTA -->
-
     <div class="card">
 
-      <h3>Huerta Muyquyta</h3>
+      <h3>Jardín Muyquyta</h3>
 
       <p>Bosa Piamonte, Bogotá</p>
 
@@ -532,7 +738,7 @@
     </p>
 
     <p>
-      Gracias a su apoyo y acompañamiento, las huertas Artemisa y Muyquyta
+      Gracias a su apoyo y acompañamiento, los Jardines de Artemisa y Muyquyta
       fortalecen sus procesos ambientales y educativos dentro de la comunidad.
     </p>
 
@@ -568,7 +774,7 @@
   </div>
 
   <p>
-    © 2026 Huertas Artemisa y Muyquyta
+    © 2026 Jardines de Artemisa y Muyquyta
   </p>
 
 </footer>
